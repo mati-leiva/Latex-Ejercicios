@@ -17,6 +17,7 @@
 \usepackage{psfrag}
 \usepackage{pgfplots}
 \usepackage{bm}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Other Settings
@@ -62,6 +63,58 @@
 \begin{document}
 \maketitle
 
+\section{Introduccion}
+el Calculo es una rama de las matematicas que estudia las variaciones de las cantidades y sus relaciones con otras, 
+de esta curiosa rama de las matematicas se derivan muchas otras ramas como la Geometria, la Fisica, la Estadistica,
+ en este recopilatorio de apuntes se intentara abarcar distintos problemas de estas diversas areas.
+
+\section{Problemas:}
 
 
+
+\begin{problem}[Demuestre que:]
+\begin{equation}
+    \int_{0}^{1}(1-x^2)^n dx = \frac{2^{2n}{(n!)}^2 }{(2n+1)!}
+\end{equation}
+\end{problem}
+
+
+
+
+\begin{center}
+
+    \fbox{\parbox[a]{0.985\linewidth}{\textbf{Solucion:}
+            %Para poder solucionar esta integral, se debe realizar una sustitucion de variables, 
+            %para esto se debe realizar la siguiente sustitucion: u = x^2, de esta forma se obtiene la siguiente integral:
+
+
+            Para poder solucionar esta integral, se debe realizar una sustitucion de variables
+            para esto se debe realizar la siguiente sustitucion: $ u = x^2 $,
+            de esta forma se obtiene la siguiente integral:
+
+
+            \begin{equation}
+                \int_{0}^{1}{(1-x^2)}^n dx = \frac{1}{2} \int_{0}^{1}{(1-u)}^n u^{-1/2}du
+            \end{equation}
+
+            Luego de esto podemos integrar por partes usando las siguientes variables,
+            $ u = (1-x)^n $ y $ v = x^{1/2} $, 
+            de esta forma se obtiene la siguiente integral:
+            
+            \begin{equation}
+            \frac{1}{2} \int_{0}^{1}{(1-u)}^n u^{-1/2}du =  n\int_{0}^{1}{(1-u)}^{  n-1} u^{1/2}du    
+            \end{equation}
+            
+            inmediatamente podemos volver a integrar por partes usando variables similares:
+            $ u = n(1-x)^{n-1} $ y $ v = x^{3/2} frac{2}{3}$, 
+            de esta forma se obtiene la siguiente integral:
+
+            \begin{equation}
+                n\int_{0}^{1}{(1-u)}^{  n-1} u^{1/2}du = n(n-1)\int_{0}^{1}{(1-u)}^{  n-1} u^{1/2}du    
+            \end{equation}
+            
+            }}
+
+
+\end{center}
 \end{document}
