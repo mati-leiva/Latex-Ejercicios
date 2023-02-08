@@ -70,7 +70,7 @@ en este recopilatorio de apuntes se intentara abarcar distintos problemas de est
 
 \section{Problemas:}
 
-
+% problema numero 2.1
 
 \begin{problem}[Demuestre que:]
 
@@ -139,51 +139,92 @@ en este recopilatorio de apuntes se intentara abarcar distintos problemas de est
     \[ I(n) =\frac{2^{n}n!} {(2n+1)!!} \]
 
     }}
-
-    \newpage
-    \fbox{\parbox[a]{0.985\linewidth}{\textbf{Solucion 2:}
-
-            Para poder solucionar esta integral, se integra por partes, haciendo la siguiente sustitucion: $ u = (1-x^2) $, y $ v = x $, de esta forma se obtiene la siguiente integral:
-
-
-            \[\int_{0}^{1}{(1-x^2)}^n dx = x(1-x^2)^{n-1}\Big|_0^1 - n(-2)\int_{0}^{1}{x^2(1-x^2)}^{n-1} dx\]
-
-
-            \[\int_{0}^{1}{(1-x^2)^n dx} =  2n\int_{0}^{1}x^2(1-x^2)^{n-1}dx\]
-
-
-            \[\mathcal{I}(n) =  2n\int_{0}^{1}(x^2 -1 + 1){(1-x^2)}^{n-1}dx \]
-
-            \[\mathcal{I}(n) = 2n\mathcal{I}(n) - 2n\mathcal{I}(n-1)\]
-
-            \[\mathcal{I}(n) = \frac{2n}{2n+1}\mathcal{I}(n-1)\]
-
-            \[\mathcal{I}(n) = \frac{2n}{2n+1}\frac{2(n-1)}{2(n-1)+1}\mathcal{I}(n-2)\]
-
-            \[\mathcal{I}(n) = \frac{2^n n!}{(2n+1)!!}\]
-
-        }}
-
-
-
-    \newpage
-
-    \begin{problem}[Circulos al infinito.]
-
-        Suponga que Circulos de igual diametro estan acomodados apretadamente en n filas dentro de un triangulo equilatero. 
-        Si A es el area del triangulo Y $A_n$ es el area total ocupada por las n filas de circulos, demuestre que:
-
-        \begin{center}
-            
-
-         $ \displaystyle\lim_{n \to \infty}   \frac{A_n}{A} = \frac{\pi}{2\sqrt{3}}$
-
-         \includegraphics[width=0.23\textwidth,height = 0.2\textwidth]{Triangulo_problema2.2.png}
-        \end{center}
-  
-
-    \end{problem}
-
-
 \end{center}
+
+\newpage
+\fbox{\parbox[a]{0.985\linewidth}{\textbf{Solucion 2:}
+
+        Para poder solucionar esta integral, se integra por partes, haciendo la siguiente sustitucion: $ u = (1-x^2) $, y $ v = x $, de esta forma se obtiene la siguiente integral:
+
+
+        \[\int_{0}^{1}{(1-x^2)}^n dx = x(1-x^2)^{n-1}\Big|_0^1 - n(-2)\int_{0}^{1}{x^2(1-x^2)}^{n-1} dx\]
+
+
+        \[\int_{0}^{1}{(1-x^2)^n dx} =  2n\int_{0}^{1}x^2(1-x^2)^{n-1}dx\]
+
+
+        \[\mathcal{I}(n) =  2n\int_{0}^{1}(x^2 -1 + 1){(1-x^2)}^{n-1}dx \]
+
+        \[\mathcal{I}(n) = 2n\mathcal{I}(n) - 2n\mathcal{I}(n-1)\]
+
+        \[\mathcal{I}(n) = \frac{2n}{2n+1}\mathcal{I}(n-1)\]
+
+        \[\mathcal{I}(n) = \frac{2n}{2n+1}\frac{2(n-1)}{2(n-1)+1}\mathcal{I}(n-2)\]
+
+        \[\mathcal{I}(n) = \frac{2^n n!}{(2n+1)!!}\]
+
+    }}
+% problema numero 2.2
+
+\newpage
+
+\begin{problem}[Circulos al infinito.]
+
+Suponga que Circulos de igual diametro estan acomodados apretadamente en n filas dentro de un triangulo equilatero.
+Si A es el area del triangulo Y $A_n$ es el area total ocupada por las n filas de circulos, demuestre que:
+
+\begin{center}
+
+
+    $ \displaystyle\lim_{n \to \infty}   \frac{A_n}{A} = \frac{\pi}{2\sqrt{3}}$
+
+    \includegraphics[width=0.23\textwidth,height = 0.2\textwidth]{Triangulo_problema2.2.png}
+\end{center}
+
+
+
+% Problema Numero 2.3 
+
+
+\end{problem}
+
+
+\newpage
+
+\begin{problem}[Sumatoria.]
+
+Determine el intervalo de convergencia de la siguiente sumatoria y calcule la suma.
+
+\begin{center}
+
+    $\displaystyle\sum_{n=0}^{\infty}n^{3}x^n   $
+\end{center}
+
+
+\end{problem}
+
+% Problema Numero 2.4
+
+
+
+
+
+\newpage
+
+\begin{problem}[Pesadilla del geometra.]
+
+Deduzca la siguiente formula de John Machin:
+
+\begin{center}
+
+    $\displaystyle\ 4\arctan{\frac{1}{5}} - \arctan{\frac{1}{239}} = \frac{\pi}{4}  $
+\end{center}
+
+
+\end{problem}
+
+
+
+
+
 \end{document}
