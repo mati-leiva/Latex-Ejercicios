@@ -64,9 +64,9 @@
 \maketitle
 
 \section{Introduccion}
-el Calculo es una rama de las matematicas que estudia las variaciones de las cantidades y sus relaciones con otras, 
+el Calculo es una rama de las matematicas que estudia las variaciones de las cantidades y sus relaciones con otras,
 de esta curiosa rama de las matematicas se derivan muchas otras ramas como la Geometria, la Fisica, la Estadistica,
- en este recopilatorio de apuntes se intentara abarcar distintos problemas de estas diversas areas.
+en este recopilatorio de apuntes se intentara abarcar distintos problemas de estas diversas areas.
 
 \section{Problemas:}
 
@@ -74,7 +74,7 @@ de esta curiosa rama de las matematicas se derivan muchas otras ramas como la Ge
 
 \begin{problem}[Demuestre que:]
 \begin{equation}
-    \int_{0}^{1}(1-x^2)^n dx = \frac{2^{2n}{(n!)}^2 }{(2n+1)!}
+    \int_{0}^{1}(1-x^2)^n dx = \frac{2^{n}{n!}}{(2n+1)!!}
 \end{equation}
 \end{problem}
 
@@ -84,34 +84,69 @@ de esta curiosa rama de las matematicas se derivan muchas otras ramas como la Ge
 \begin{center}
 
     \fbox{\parbox[a]{0.985\linewidth}{\textbf{Solucion:}
-            %Para poder solucionar esta integral, se debe realizar una sustitucion de variables, 
-            %para esto se debe realizar la siguiente sustitucion: u = x^2, de esta forma se obtiene la siguiente integral:
+    %Para poder solucionar esta integral, se debe realizar una sustitucion de variables, 
+    %para esto se debe realizar la siguiente sustitucion: u = x^2, de esta forma se obtiene la siguiente integral:
 
 
-            Para poder solucionar esta integral, se debe realizar una sustitucion de variables
-            para esto se debe realizar la siguiente sustitucion: $ u = x^2 $,
-            de esta forma se obtiene la siguiente integral:
+    Para poder solucionar esta integral, se debe realizar una sustitucion de variables
+    para esto se debe realizar la siguiente sustitucion: $ u = x^2 $,
+    de esta forma se obtiene la siguiente integral:
 
+
+    \begin{equation}
+        \int_{0}^{1}{(1-x^2)}^n dx = \frac{1}{2} \int_{0}^{1}{(1-u)}^n u^{-1/2}du
+    \end{equation}
+
+    Luego de esto podemos integrar por partes usando las siguientes variables,
+    $ u = (1-x)^n $ y $ v = x^{1/2} $,
+    de esta forma se obtiene la siguiente integral:
+
+    \begin{equation}
+        \frac{1}{2} \int_{0}^{1}{(1-x)}^n x^{-1/2}du =  n\int_{0}^{1}{(1-x)}^{  n-1} x^{1/2}du
+    \end{equation}
+
+    inmediatamente podemos volver a integrar por partes usando variables similares,
+    \newline
+    $u = n{(1-x)}^{n-1} $ y $ v = \frac{2}{3}x^{3/2} $,
+    de esta forma se obtiene la siguiente integral:
+
+    \begin{equation}
+        n\int_{0}^{1}{(1-x)}^{  n-1} x^{1/2}dx = \frac{2}{3} n(n-1) \int_{0}^{1}{(1-x)}^{n-1}x^{3/2}dx
+    \end{equation}
+
+    seguidamente notamos que la integral sigue una clase de recurrencia, la cual podemos escribir como:
+
+
+    \begin{equation}
+        I(n) =  2n I(n-1)
+    \end{equation}
+
+    iterando nuevamente usando integracion por partes, nos damos cuenta que se obtiene la siguiente integral:
+
+    \begin{equation}
+        I(n) = \frac{4}{3}n(n-1)I(n-2)
+    \end{equation}
+
+    \begin{equation}
+        I(n) = \frac{4}{3}\frac{2}{5}n(n-1)(n-2)I(n-3)
+    \end{equation}
+
+    \begin{equation}
+        I(n) = \frac{4}{3}\frac{2}{5}\dots \frac{1}{2n+1} n(n-1)(n-2)\dots (1) I(1)
+    \end{equation}
+
+    \begin{equation}
+        I(n) =\frac{2^{n}n!} {(2n+1)!!}
+    \end{equation}
+    }}
+
+    \newpage
+    \fbox{\parbox[a]{0.985\linewidth}{\textbf{Solucion 2:}
+
+            Para poder solucionar esta integral, se integra por partes, haciendo la siguiente sustitucion: $ u = (1-x^2) $, y $ v = x $, de esta forma se obtiene la siguiente integral:
 
             \begin{equation}
-                \int_{0}^{1}{(1-x^2)}^n dx = \frac{1}{2} \int_{0}^{1}{(1-u)}^n u^{-1/2}du
-            \end{equation}
-
-            Luego de esto podemos integrar por partes usando las siguientes variables,
-            $ u = (1-x)^n $ y $ v = x^{1/2} $, 
-            de esta forma se obtiene la siguiente integral:
-            
-            \begin{equation}
-            \frac{1}{2} \int_{0}^{1}{(1-x)}^n x^{-1/2}du =  n\int_{0}^{1}{(1-x)}^{  n-1} x^{1/2}du    
-            \end{equation}
-            
-            inmediatamente podemos volver a integrar por partes usando variables similares,
-            \newline
-            $u = n{(1-x)}^{n-1} $ y $ v = \frac{2}{3}x^{3/2} $, 
-            de esta forma se obtiene la siguiente integral:
-
-            \begin{equation}
-                n\int_{0}^{1}{(1-x)}^{  n-1} x^{1/2}dx = \frac{2}{3} n(n-1) \int_{0}^{1}{(1-x)}^{n-1}x^{3/2}dx    
+                \int_{0}^{1}{(1-x^2)}^n dx = \int_{0}^{1}
             \end{equation}
 
 
@@ -126,8 +161,9 @@ de esta curiosa rama de las matematicas se derivan muchas otras ramas como la Ge
 
 
 
-            
-            }}
+
+
+        }}
 
 
 \end{center}

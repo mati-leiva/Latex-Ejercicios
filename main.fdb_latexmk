@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1675809576 "/home/mati/Documentos/Latex Cosas/main.tex" "main.pdf" "main" 1675809576
+["pdflatex"] 1675818893 "/home/mati/Documentos/Latex Cosas/main.tex" "main.pdf" "main" 1675818894
   "/etc/texmf/web2c/texmf.cnf" 1675795196 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/mati/Documentos/Latex Cosas/main.tex" 1675809575 4956 033d7b92dab9c0a67ffcd845fd2d4b4d ""
+  "/home/mati/Documentos/Latex Cosas/main.tex" 1675818893 5783 d0c1039f401115422b056ae4b2aa75c8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -215,8 +215,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1675795216 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1675795239 2800050 79f08eba99df777425eda42c8b07520a ""
-  "main.aux" 1675809576 265 ca6f814e8476974984d6a65b91246fbe "pdflatex"
-  "main.tex" 1675809575 4956 033d7b92dab9c0a67ffcd845fd2d4b4d ""
+  "main.aux" 1675818894 265 efc63b24df8bc1de565d2105b87e77f3 "pdflatex"
+  "main.tex" 1675818893 5783 d0c1039f401115422b056ae4b2aa75c8 ""
   (generated)
   "main.aux"
   "main.log"
