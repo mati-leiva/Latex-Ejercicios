@@ -73,9 +73,10 @@ en este recopilatorio de apuntes se intentara abarcar distintos problemas de est
 
 
 \begin{problem}[Demuestre que:]
-\begin{equation}
-    \int_{0}^{1}(1-x^2)^n dx = \frac{2^{n}{n!}}{(2n+1)!!}
-\end{equation}
+
+
+\[\int_{0}^{1}(1-x^2)^n dx = \frac{2^{n}{n!}}{(2n+1)!!}\]
+
 \end{problem}
 
 
@@ -93,51 +94,50 @@ en este recopilatorio de apuntes se intentara abarcar distintos problemas de est
     de esta forma se obtiene la siguiente integral:
 
 
-    \begin{equation}
-        \int_{0}^{1}{(1-x^2)}^n dx = \frac{1}{2} \int_{0}^{1}{(1-u)}^n u^{-1/2}du
-    \end{equation}
+
+    \[\int_{0}^{1}{(1-x^2)}^n dx = \frac{1}{2} \int_{0}^{1}{ (1-u)}^n u^{-1/2}du \]
+
 
     Luego de esto podemos integrar por partes usando las siguientes variables,
     $ u = (1-x)^n $ y $ v = x^{1/2} $,
     de esta forma se obtiene la siguiente integral:
 
-    \begin{equation}
-        \frac{1}{2} \int_{0}^{1}{(1-x)}^n x^{-1/2}du =  n\int_{0}^{1}{(1-x)}^{  n-1} x^{1/2}du
-    \end{equation}
+
+    \[frac{1}{2} \int_{0}^{1}{(1-x)}^n x^{-1/2}du =  n\int_{0}^{1}{(1-x)}^{  n-1} x^{1/2}du \]
+
 
     inmediatamente podemos volver a integrar por partes usando variables similares,
     \newline
     $u = n{(1-x)}^{n-1} $ y $ v = \frac{2}{3}x^{3/2} $,
     de esta forma se obtiene la siguiente integral:
 
-    \begin{equation}
-        n\int_{0}^{1}{(1-x)}^{  n-1} x^{1/2}dx = \frac{2}{3} n(n-1) \int_{0}^{1}{(1-x)}^{n-1}x^{3/2}dx
-    \end{equation}
+
+    \[ n\int_{0}^{1}{(1-x)}^{  n-1} x^{1/2}dx = \frac{2}{3} n(n-1) \int_{0}^{1}{(1-x)}^{n-1}x^{3/2}dx \]
+
 
     seguidamente notamos que la integral sigue una clase de recurrencia, la cual podemos escribir como:
 
 
-    \begin{equation}
-        I(n) =  2n I(n-1)
-    \end{equation}
+
+    \[I(n) =  2n I(n-1) \]
+
 
     iterando nuevamente usando integracion por partes, nos damos cuenta que se obtiene la siguiente integral:
 
-    \begin{equation}
-        I(n) = \frac{4}{3}n(n-1)I(n-2)
-    \end{equation}
 
-    \begin{equation}
-        I(n) = \frac{4}{3}\frac{2}{5}n(n-1)(n-2)I(n-3)
-    \end{equation}
+    \[ I(n) = \frac{4}{3}n(n-1)I(n-2) \]
 
-    \begin{equation}
-        I(n) = \frac{4}{3}\frac{2}{5}\dots \frac{1}{2n+1} n(n-1)(n-2)\dots (1) I(1)
-    \end{equation}
 
-    \begin{equation}
-        I(n) =\frac{2^{n}n!} {(2n+1)!!}
-    \end{equation}
+
+    \[I(n) = \frac{4}{3}\frac{2}{5}n(n-1)(n-2)I(n-3) \]
+
+
+    \[I(n) = \frac{4}{3}\frac{2}{5}\dots \frac{1}{2n+1} n(n-1)(n-2)\dots (1) I(1) \]
+
+
+
+    \[ I(n) =\frac{2^{n}n!} {(2n+1)!!} \]
+
     }}
 
     \newpage
@@ -145,25 +145,44 @@ en este recopilatorio de apuntes se intentara abarcar distintos problemas de est
 
             Para poder solucionar esta integral, se integra por partes, haciendo la siguiente sustitucion: $ u = (1-x^2) $, y $ v = x $, de esta forma se obtiene la siguiente integral:
 
-            \begin{equation}
-                \int_{0}^{1}{(1-x^2)}^n dx = \int_{0}^{1}
-            \end{equation}
+
+            \[\int_{0}^{1}{(1-x^2)}^n dx = x(1-x^2)^{n-1}\Big|_0^1 - n(-2)\int_{0}^{1}{x^2(1-x^2)}^{n-1} dx\]
 
 
+            \[\int_{0}^{1}{(1-x^2)^n dx} =  2n\int_{0}^{1}x^2(1-x^2)^{n-1}dx\]
 
 
+            \[\mathcal{I}(n) =  2n\int_{0}^{1}(x^2 -1 + 1){(1-x^2)}^{n-1}dx \]
 
+            \[\mathcal{I}(n) = 2n\mathcal{I}(n) - 2n\mathcal{I}(n-1)\]
 
+            \[\mathcal{I}(n) = \frac{2n}{2n+1}\mathcal{I}(n-1)\]
 
+            \[\mathcal{I}(n) = \frac{2n}{2n+1}\frac{2(n-1)}{2(n-1)+1}\mathcal{I}(n-2)\]
 
-
-
-
-
-
-
+            \[\mathcal{I}(n) = \frac{2^n n!}{(2n+1)!!}\]
 
         }}
+
+
+
+    \newpage
+
+    \begin{problem}[Circulos al infinito.]
+
+        Suponga que Circulos de igual diametro estan acomodados apretadamente en n filas dentro de un triangulo equilatero. 
+        Si A es el area del triangulo Y $A_n$ es el area total ocupada por las n filas de circulos, demuestre que:
+
+        \begin{center}
+            
+
+         $ \displaystyle\lim_{n \to \infty}   \frac{A_n}{A} = \frac{\pi}{2\sqrt{3}}$
+
+         \includegraphics[width=0.23\textwidth,height = 0.2\textwidth]{Triangulo_problema2.2.png}
+        \end{center}
+  
+
+    \end{problem}
 
 
 \end{center}
