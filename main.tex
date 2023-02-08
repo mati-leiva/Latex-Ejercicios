@@ -224,7 +224,41 @@ Deduzca la siguiente formula de John Machin:
 \end{problem}
 
 
+\newpage
+
+% problema numero 2.5
+
+\begin{problem}[Calcule la siguiente integral.]
+
+\begin{center}
+
+    \[\displaystyle\ \int_{0}^{\infty }\frac{x^2 + 1 }{x^4 + 1}dx\]
+
+\end{center}
+
+\end{problem}
+\fbox{\parbox[a]{0.985\linewidth}{\textbf{Solucion:}
 
 
+
+        \[ \displaystyle \int_{0}^{\infty }\frac{x^2 + 1 }{x^4 + 1}dx = \int_{0}^{\infty }\frac{1 + \frac{1}{x^2} }{x^2 + \frac{1}{x^2}}dx\]
+
+        \[\displaystyle \int_{0}^{\infty }\frac{1 + \frac{1}{x^2} }{x^2 + \frac{1}{x^2}}dx = \int_{0}^{\infty }\frac{1 + \frac{1}{x^2} }{(x + \frac{1}{x})^2 + 2 }dx\]
+
+        Para poder seguir resolviendo esta integral, usaremos una sustitucion $ u = x + \frac{1}{x} $, y de esta forma se obtiene la siguiente integral:
+
+        \[\displaystyle \int_{0}^{\infty }\frac{1 + \frac{1}{x^2} }{(x + \frac{1}{x})^2 + 2 }dx = \int_{-\infty}^{\infty }\frac{1}{u^2 + 2 }du\]
+
+        \[\int_{-\infty}^{\infty }\frac{1}{u^2 + 2 }du = 2 \int_{0}^{\infty }\frac{1}{u^2 + 2 }du\]
+
+        Para poder terminar la integral, usamos una sustitucion $\sqrt{2}a = u$, y de esta manera, obtenemos la integral:
+
+        \[\int_{0}^{\infty }\frac{1}{u^2 + 2 }du = 2\sqrt{2} \int_{0}^{\infty }\frac{1}{2a^2 + 2 }da\]
+
+        \[\sqrt{2} \int_{0}^{\infty }\frac{1}{a^2 + 1 }da = \sqrt{2} \arctan(x)\Big|_0^{\infty} = \frac{\pi}{\sqrt{2}}\]
+
+
+
+    }}
 
 \end{document}
