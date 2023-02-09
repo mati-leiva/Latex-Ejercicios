@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1675892702 "/home/mati/Documentos/Latex Cosas/main.tex" "main.pdf" "main" 1675892703
+["pdflatex"] 1675945526 "/home/mati/Documentos/Latex Cosas/main.tex" "main.pdf" "main" 1675945527
   "/etc/texmf/web2c/texmf.cnf" 1675795196 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/mati/Documentos/Latex Cosas/main.tex" 1675892702 8212 46eae6983bd038a2c27bc25f8a703d76 ""
+  "/home/mati/Documentos/Latex Cosas/main.tex" 1675945526 9189 8a2287e0e79792dcaef84720fff188d3 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -217,8 +217,8 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1675795216 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1675795239 2800050 79f08eba99df777425eda42c8b07520a ""
   "Triangulo_problema2.2.png" 1675881441 10411 9a21041f50f18d59c4ca504ee13291d3 ""
-  "main.aux" 1675892703 265 a98281d9e418ce41a751eb2158500e0f "pdflatex"
-  "main.tex" 1675892702 8212 46eae6983bd038a2c27bc25f8a703d76 ""
+  "main.aux" 1675945527 471 ef911659e304323b74a84d2f04897675 "pdflatex"
+  "main.tex" 1675945526 9189 8a2287e0e79792dcaef84720fff188d3 ""
   (generated)
   "main.aux"
   "main.log"

@@ -71,16 +71,52 @@ en este recopilatorio de apuntes se intentara abarcar distintos problemas de est
 \section{Problemas:}
 
 % problema numero 2.1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Calculo 1.}
+\begin{problem}[Circulos al infinito.]
 
+Suponga que Circulos de igual diametro estan acomodados apretadamente en n filas dentro de un triangulo equilatero.
+Si A es el area del triangulo Y $A_n$ es el area total ocupada por las n filas de circulos, demuestre que:
+
+\begin{center}
+
+    $ \displaystyle\lim_{n \to \infty}   \frac{A_n}{A} = \frac{\pi}{2\sqrt{3}}$
+
+    \includegraphics[width=0.23\textwidth,height = 0.2\textwidth]{Triangulo_problema2.2.png}
+
+\end{center}
+
+\end{problem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% problema numero 2.2
+
+\begin{problem}[Pesadilla del geometra.]
+
+Deduzca la siguiente formula de John Machin:
+
+\begin{center}
+
+    $\displaystyle\ 4\arctan{\frac{1}{5}} - \arctan{\frac{1}{239}} = \frac{\pi}{4}  $
+
+\end{center}
+
+
+\end{problem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+
+\subsection{Calculo 2.}
+
+% problema numero 2.3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{problem}[Demuestre que:]
 
 
 \[\int_{0}^{1}(1-x^2)^n dx = \frac{2^{n}{n!}}{(2n+1)!!}\]
 
 \end{problem}
-
-
-
 
 \begin{center}
 
@@ -107,7 +143,6 @@ en este recopilatorio de apuntes se intentara abarcar distintos problemas de est
 
 
     inmediatamente podemos volver a integrar por partes usando variables similares,
-    \newline
     $u = n{(1-x)}^{n-1} $ y $ v = \frac{2}{3}x^{3/2} $,
     de esta forma se obtiene la siguiente integral:
 
@@ -140,94 +175,37 @@ en este recopilatorio de apuntes se intentara abarcar distintos problemas de est
 
     }}
 \end{center}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%%%%%%%%%%%%%%
 \newpage
-\fbox{\parbox[a]{0.985\linewidth}{\textbf{Solucion 2:}
-
-        Para poder solucionar esta integral, se integra por partes, haciendo la siguiente sustitucion: $ u = (1-x^2)^n $, y $ v = x $, de esta forma se obtiene la siguiente integral:
-
-
-        \[\int_{0}^{1}{(1-x^2)}^n dx = x(1-x^2)^{n-1}\Big|_0^1 - n(-2)\int_{0}^{1}{x^2(1-x^2)}^{n-1} dx\]
-
-
-        \[\int_{0}^{1}{(1-x^2)^n dx} =  2n\int_{0}^{1}x^2(1-x^2)^{n-1}dx\]
-
-
-        \[\mathcal{I}(n) =  2n\int_{0}^{1}(x^2 -1 + 1){(1-x^2)}^{n-1}dx \]
-
-        \[\mathcal{I}(n) = 2n\mathcal{I}(n) - 2n\mathcal{I}(n-1)\]
-
-        \[\mathcal{I}(n) = \frac{2n}{2n+1}\mathcal{I}(n-1)\]
-
-        \[\mathcal{I}(n) = \frac{2n}{2n+1}\frac{2(n-1)}{2(n-1)+1}\mathcal{I}(n-2)\]
-
-        \[\mathcal{I}(n) = \frac{2^n n!}{(2n+1)!!}\]
-
-    }}
-% problema numero 2.2
-
-\newpage
-
-\begin{problem}[Circulos al infinito.]
-
-Suponga que Circulos de igual diametro estan acomodados apretadamente en n filas dentro de un triangulo equilatero.
-Si A es el area del triangulo Y $A_n$ es el area total ocupada por las n filas de circulos, demuestre que:
 
 \begin{center}
+    \fbox{\parbox[a]{0.985\linewidth}{\textbf{Solucion 2:}
+
+            Para poder solucionar esta integral, se integra por partes, haciendo la siguiente sustitucion: $ u = (1-x^2)^n $, y $ v = x $, de esta forma se obtiene la siguiente integral:
 
 
-    $ \displaystyle\lim_{n \to \infty}   \frac{A_n}{A} = \frac{\pi}{2\sqrt{3}}$
+            \[\int_{0}^{1}{(1-x^2)}^n dx = x(1-x^2)^{n-1}\Big|_0^1 - n(-2)\int_{0}^{1}{x^2(1-x^2)}^{n-1} dx\]
 
-    \includegraphics[width=0.23\textwidth,height = 0.2\textwidth]{Triangulo_problema2.2.png}
+
+            \[\int_{0}^{1}{(1-x^2)^n dx} =  2n\int_{0}^{1}x^2(1-x^2)^{n-1}dx\]
+
+
+            \[\mathcal{I}(n) =  2n\int_{0}^{1}(x^2 -1 + 1){(1-x^2)}^{n-1}dx \]
+
+            \[\mathcal{I}(n) = 2n\mathcal{I}(n) - 2n\mathcal{I}(n-1)\]
+
+            \[\mathcal{I}(n) = \frac{2n}{2n+1}\mathcal{I}(n-1)\]
+
+            \[\mathcal{I}(n) = \frac{2n}{2n+1}\frac{2(n-1)}{2(n-1)+1}\mathcal{I}(n-2)\]
+
+            \[\mathcal{I}(n) = \frac{2^n n!}{(2n+1)!!}\]
+
+        }}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{center}
 
-
-
-% Problema Numero 2.3 
-
-
-\end{problem}
-
-
-\newpage
-
-\begin{problem}[Sumatoria.]
-
-Determine el intervalo de convergencia de la siguiente sumatoria y calcule la suma.
-
-\begin{center}
-
-    $\displaystyle\sum_{n=0}^{\infty}n^{3}x^n   $
-\end{center}
-
-
-\end{problem}
-
-% Problema Numero 2.4
-
-
-
-
-
-\newpage
-
-\begin{problem}[Pesadilla del geometra.]
-
-Deduzca la siguiente formula de John Machin:
-
-\begin{center}
-
-    $\displaystyle\ 4\arctan{\frac{1}{5}} - \arctan{\frac{1}{239}} = \frac{\pi}{4}  $
-\end{center}
-
-
-\end{problem}
-
-
-\newpage
-
-% problema numero 2.5
-
+%problema 2.4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%
 \begin{problem}[Calcule la siguiente integral.]
 
 \begin{center}
@@ -237,28 +215,48 @@ Deduzca la siguiente formula de John Machin:
 \end{center}
 
 \end{problem}
-\fbox{\parbox[a]{0.985\linewidth}{\textbf{Solucion:}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+
+    \fbox{\parbox[a]{0.985\linewidth}{\textbf{Solucion:}
 
 
 
-        \[ \displaystyle \int_{0}^{\infty }\frac{x^2 + 1 }{x^4 + 1}dx = \int_{0}^{\infty }\frac{1 + \frac{1}{x^2} }{x^2 + \frac{1}{x^2}}dx\]
+    \[ \displaystyle \int_{0}^{\infty }\frac{x^2 + 1 }{x^4 + 1}dx = \int_{0}^{\infty }\frac{1 + \frac{1}{x^2} }{x^2 + \frac{1}{x^2}}dx\]
 
-        \[\displaystyle \int_{0}^{\infty }\frac{1 + \frac{1}{x^2} }{x^2 + \frac{1}{x^2}}dx = \int_{0}^{\infty }\frac{1 + \frac{1}{x^2} }{(x + \frac{1}{x})^2 + 2 }dx\]
+    \[\displaystyle \int_{0}^{\infty }\frac{1 + \frac{1}{x^2} }{x^2 + \frac{1}{x^2}}dx = \int_{0}^{\infty }\frac{1 + \frac{1}{x^2} }{(x + \frac{1}{x})^2 + 2 }dx\]
 
-        Para poder seguir resolviendo esta integral, usaremos una sustitucion $ u = x + \frac{1}{x} $, y de esta forma se obtiene la siguiente integral:
+    Para poder seguir resolviendo esta integral, usaremos una sustitucion $ u = x + \frac{1}{x} $, y de esta forma se obtiene la siguiente integral:
 
-        \[\displaystyle \int_{0}^{\infty }\frac{1 + \frac{1}{x^2} }{(x + \frac{1}{x})^2 + 2 }dx = \int_{-\infty}^{\infty }\frac{1}{u^2 + 2 }du\]
+    \[\displaystyle \int_{0}^{\infty }\frac{1 + \frac{1}{x^2} }{(x + \frac{1}{x})^2 + 2 }dx = \int_{-\infty}^{\infty }\frac{1}{u^2 + 2 }du\]
 
-        \[\int_{-\infty}^{\infty }\frac{1}{u^2 + 2 }du = 2 \int_{0}^{\infty }\frac{1}{u^2 + 2 }du\]
+    \[\int_{-\infty}^{\infty }\frac{1}{u^2 + 2 }du = 2 \int_{0}^{\infty }\frac{1}{u^2 + 2 }du\]
 
-        Para poder terminar la integral, usamos una sustitucion $\sqrt{2}a = u$, y de esta manera, obtenemos la integral:
+    Para poder terminar la integral, usamos una sustitucion $\sqrt{2}a = u$, y de esta manera, obtenemos la integral:
 
-        \[\int_{0}^{\infty }\frac{1}{u^2 + 2 }du = 2\sqrt{2} \int_{0}^{\infty }\frac{1}{2a^2 + 2 }da\]
+    \[\int_{0}^{\infty }\frac{1}{u^2 + 2 }du = 2\sqrt{2} \int_{0}^{\infty }\frac{1}{2a^2 + 2 }da\]
 
-        \[\sqrt{2} \int_{0}^{\infty }\frac{1}{a^2 + 1 }da = \sqrt{2} \arctan(x)\Big|_0^{\infty} = \frac{\pi}{\sqrt{2}}\]
-
-
+    \[\sqrt{2} \int_{0}^{\infty }\frac{1}{a^2 + 1 }da = \sqrt{2} \arctan(x)\Big|_0^{\infty} = \frac{\pi}{\sqrt{2}}\]
 
     }}
+
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Sumatoria.]
+
+Determine el intervalo de convergencia de la siguiente sumatoria y calcule la suma.
+
+\begin{center}
+
+    $\displaystyle\sum_{n=0}^{\infty}n^{3}x^n $
+
+\end{center}
+
+
+\end{problem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
