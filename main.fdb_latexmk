@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1677277039 "/home/mati/Documentos/Latex Cosas/main.tex" "main.pdf" "main" 1677277040
+["pdflatex"] 1677512667 "/home/mati/Documentos/Latex Cosas/main.tex" "main.pdf" "main" 1677512668
   "/etc/texmf/web2c/texmf.cnf" 1675795196 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/mati/Documentos/Latex Cosas/main.tex" 1677277039 9837 7448c8518b5c599c2dea2847fe78de74 ""
+  "/home/mati/Documentos/Latex Cosas/main.tex" 1677512667 14381 bd053ab860bb6baa0df14c3f6344f4f4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -42,6 +42,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
@@ -49,8 +50,12 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf" 1622145181 26965 3b6d1655ad716f98e788b1fb9f2e87b8 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty" 1643231327 147419 2058c0f5e6893b19c8f3ce95d177646c ""
+  "/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def" 1643231327 5233 d5e383ed66bf272b71b1a90b596e21c6 ""
   "/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty" 1576625273 7734 b98cbb34c81f667027c1e3ebdbfce34b ""
   "/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty" 1583617216 6501 4011d89d9621e0b0901138815ba5ff29 ""
   "/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty" 1572645307 1057 525c2192b5febbd8c1f662c9468335bb ""
@@ -217,8 +222,8 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1675795216 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1675795239 2800050 79f08eba99df777425eda42c8b07520a ""
   "Triangulo_problema2.2.png" 1675881441 10411 9a21041f50f18d59c4ca504ee13291d3 ""
-  "main.aux" 1677277040 471 ef911659e304323b74a84d2f04897675 "pdflatex"
-  "main.tex" 1677277039 9837 7448c8518b5c599c2dea2847fe78de74 ""
+  "main.aux" 1677512668 633 213edd116d9756184c6f92b2810f4d9b "pdflatex"
+  "main.tex" 1677512667 14381 bd053ab860bb6baa0df14c3f6344f4f4 ""
   (generated)
   "main.aux"
   "main.log"

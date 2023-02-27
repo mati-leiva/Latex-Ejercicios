@@ -1,8 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Define Article %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{article}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Using Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[spanish]{babel}
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{amssymb}
@@ -247,12 +246,12 @@ Deduzca la siguiente formula de John Machin:
 
 \end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% Problema 2.5
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{problem}[Sumatoria.]
 
-Determine el intervalo de convergencia de la siguiente sumatoria y calcule la suma.
+Determine el intervalo de convergencia de la siguiente sumatoria y calcule la suma en terminos de x.
 
 \begin{center}
 
@@ -277,9 +276,140 @@ Determine el intervalo de convergencia de la siguiente sumatoria y calcule la su
         Al obtener nuestro resultado, obtenemos que nuestra serie converge con:
     \end{center}  \[\left\lvert x\right\rvert < 1 \]
 
+    Para obtener el valor de la suma, nos basamos del hecho de una suma geometrica, sabemos que, la formula de una suma geometrica es igual a:
+
+    \[\frac{1}{1-x} =  \sum_{n=0}^{\infty}x^n\]
+
+    \[\frac{d}{dx}\frac{1}{1-x} =  \frac{d}{dx}\sum_{n=0}^{\infty}x^n\]
+
+    \[\frac{-1}{{(1-x)}^2} =  \sum_{n=0}^{\infty}nx^{n-1}\]
+
+    Luego multiplicando la ecuacion por x en ambos lados, se tiene que:
+
+    \[\frac{-x}{{(1-x)}^2} =  \sum_{n=0}^{\infty}nx^{n}\]
+
+    luego volvemos a derivar, para obtener que:
+
+    \[\frac{1+x}{{(1-x)}^3} =  \sum_{n=0}^{\infty}n^{2}x^{n-1}\]
+
+    \[\frac{(1+x)x}{{(1-x)}^3} =  \sum_{n=0}^{\infty}n^{2}x^{n}\]
+
+    \[\frac{d}{dx}\frac{(1+x)x}{{(1-x)}^3} = \frac{d}{dx} \sum_{n=0}^{\infty}n^{2}x^{n}\]
+
+    \[\frac{x^2 + 4x +1 }{{(1-x)}^4} = \sum_{n=0}^{\infty}n^{3}x^{n-1}\]
+
+    \[\frac{(x^2 + 4x +1)x}{{(1-x)}^4} = \sum_{n=0}^{\infty}n^{3}x^{n}\]
     }}
 
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % %%%%%%%% Problema 2.6
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+    \newpage
+    \begin{problem}[Calcule la siguiente integral. MIT integration bee finals 2023.]
+
+    \begin{center}
+
+        \[\displaystyle\ \int_{0}^{\frac{\pi}{2}}\frac{\sqrt[3]{\tan{x}}}{{(\sin{x}+ \cos{x})}^2}dx\]
+
+    \end{center}
+
+    \end{problem}
+
+
+
+
 \end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%% Problema 2.7
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\begin{problem}[Demuestre que la integral tiene las siguientes cotas:]
+
+\begin{center}
+
+    \[\displaystyle\    \frac{1}{7\sqrt{2}} \leq \int_{0}^{1}\frac{{x}^6}{\sqrtsign{1+{x}^2}}dx \leqslant \frac{1}{7}\]
+
+\end{center}
+
+\end{problem}
+\begin{center}
+
+
+    \fbox{\parbox[a]{0.985\linewidth}{\textbf{Solucion:}
+
+    Tenemos que para el intervalo \[x\in{[0,1]}\]
+    \[1 \leqslant \sqrt{1+x^2} \; \; \; \forall x \in{[0,1]} \]
+
+    \[ \frac{1}{\sqrt{1+x^2}} \leqslant 1  \; \; \; \forall x \in{[0,1]} \]
+
+    \[ \frac{{x}^6}{\sqrt{1+x^2}} \leqslant x^6  \; \; \; \forall x \in{[0,1]} \]
+
+    \[ \int_{0}^{1} \frac{{x}^6}{\sqrt{1+x^2}} \,dx  \leqslant   \int_{0}^{1} x^6  \,dx    \]
+
+    \[ \int_{0}^{1} \frac{{x}^6}{\sqrt{1+x^2}} \,dx  \leqslant  \frac{x^7}{7} \Big|_0^{1} = \frac{1}{7}  \]
+
+    \medskip
+    Para la desigualdad en el otro lado, tenemos que:
+
+    \[x^6 \leqslant 1  \; \; \; \forall x \in{[0,1]}  \]
+
+    \[x^6 \leqslant x^6\sqrt{1+x^2} \leqslant x^6\sqrt{2} \; \; \; \forall \in{[0,1]}  \]
+
+    \[\frac{x^6 }{\sqrt{2}} \leqslant \frac{x^6\sqrt{1+x^2}}{\sqrt{2}} \leqslant x^6  \; \; \; \forall \in{[0,1]}  \]
+
+    \[\frac{x^6 }{\sqrt{2(1+x^2)}} \leqslant \frac{x^6}{\sqrt{2}} \leqslant \frac{x^6}{\sqrt{1+x^2}} \; \; \; \forall \in{[0,1]}  \]
+
+    \[\int_{0}^{1} \frac{x^6}{\sqrt{2}}  \,dx \leqslant \int_{0}^{1} \frac{x^6}{\sqrt{1+x^2}}  \,dx  \; \; \; \forall \in{[0,1]}  \]
+
+    \[\frac{x^7}{7\sqrt{2}} \Big|_0^{1} = \frac{1}{7\sqrt{2}} \leqslant \int_{0}^{1} \frac{x^6}{\sqrt{1+x^2}}  \,dx  \; \; \; \forall \in{[0,1]}  \]
+
+    Finalmente:
+    \[\frac{1}{7\sqrt{2}} \leqslant \int_{0}^{1} \frac{x^6}{\sqrt{1+x^2}}  \,dx \leqslant \frac{1}{7}   \; \; \; \forall \in{[0,1]}  \]
+
+    }}
+
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % %%%%%%%% Problema 2.8
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \newpage
+    \begin{problem}
+    Para cualquier funcion integrable $f(x)$, muestre que:
+    \[ \lim_{n \to \infty} \frac{1}{n} \int_{0}^{n} f(\frac{\lfloor x\rfloor }{n})  \,dx  = \int_{0}^{1}f(x)  \,dx \]
+
+    \end{problem}
+
+    \fbox{\parbox[a]{0.985\linewidth}{\textbf{Solucion:}
+            Para la funcion piso, se tiene que para todo x,
+            \[k \leqslant \left\lfloor x\right\rfloor < k+1\]
+
+            \[\lim_{n \to \infty} \frac{1}{n} \int_{0}^{n} f(\frac{\lfloor x\rfloor }{n})  \,dx  =
+                \lim_{n \to \infty} \frac{1}{n} \int_{0}^{1} f(\frac{\lfloor x\rfloor }{n})  \,dx + \frac{1}{n} \int_{1}^{2} f(\frac{\lfloor x\rfloor }{n})  \,dx  \ldots
+                + \frac{1}{n} \int_{n-1}^{n} f(\frac{\lfloor x\rfloor }{n})  \,dx \]
+
+
+            \[\lim_{n \to \infty} \frac{1}{n} \int_{0}^{n} f(\frac{\lfloor x\rfloor }{n})  \,dx  = \lim_{n \to \infty}\frac{1}{n}\sum_{k= 0}^{n}\-\int_{k}^{k+1} f(\frac{\lfloor x\rfloor }{n})  \,dx   \]
+
+
+
+
+
+
+        }}
+
+
+
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
