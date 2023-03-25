@@ -240,7 +240,7 @@ Deduzca la siguiente formula de John Machin:
 
     \[\int_{0}^{\infty }\frac{1}{u^2 + 2 }du = 2\sqrt{2} \int_{0}^{\infty }\frac{1}{2a^2 + 2 }da\]
 
-    \[\sqrt{2} \int_{0}^{\infty }\frac{1}{a^2 + 1 }da = \sqrt{2} \arctan(x)\Big|_0^{\infty} = \frac{\pi}{\sqrt{2}}\]
+    \[\sqrt{2} \int_{20}^{\infty }\frac{1}{a^2 + 1 }da = \sqrt{2} \arctan(x)\Big|_0^{\infty} = \frac{\pi}{\sqrt{2}}\]
 
     }}
 
@@ -251,7 +251,7 @@ Deduzca la siguiente formula de John Machin:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{problem}[Sumatoria.]
 
-Determine el intervalo de convergencia de la siguiente sumatoria y calcule la suma en terminos de x.
+Determine el intervalo de convergencia de la siguiente sumatoria y calcule la suma en terminos de $x$.
 
 \begin{center}
 
@@ -318,6 +318,12 @@ Determine el intervalo de convergencia de la siguiente sumatoria y calcule la su
     \end{center}
 
     \end{problem}
+    \fbox{\parbox[a]{0.985\linewidth}{\textbf{Solucion:}
+        Para resolver esta integral, vamos a necesitar unas manipulaciones algebraicas,
+         para esto, primero transformaremos el denominador en terminos de una tangente
+         \[\displaystyle\ \int_{0}^{\frac{\pi}{2}}\frac{\sqrt[3]{\tan{x}}}{{(\sin{x}+ \cos{x})}^2}dx = \displaystyle\ \int_{0}^{\frac{\pi}{2}}\frac{\sqrt[3]{\tan{x}}}{{\cos(x)}^2{(\tan{x}+ 1)}^2}dx\]
+        \[\displaystyle\ \int_{0}^{\frac{\pi}{2}}\frac{\sqrt[3]{\tan{x}}}{{(\tan{x}+ 1)}^2}{\sec(x)}^{2}dx\]
+    }}
 
 
 
@@ -388,23 +394,39 @@ Determine el intervalo de convergencia de la siguiente sumatoria y calcule la su
     \end{problem}
 
     \fbox{\parbox[a]{0.985\linewidth}{\textbf{Solucion:}
-            Para la funcion piso, se tiene que para todo x,
-            \[k \leqslant \left\lfloor x\right\rfloor < k+1\]
+    Para la funcion piso, se tiene que para todo x,
+    \[k \leqslant \left\lfloor x\right\rfloor < k+1\]
 
-            \[\lim_{n \to \infty} \frac{1}{n} \int_{0}^{n} f(\frac{\lfloor x\rfloor }{n})  \,dx  =
-                \lim_{n \to \infty} \frac{1}{n} \int_{0}^{1} f(\frac{\lfloor x\rfloor }{n})  \,dx + \frac{1}{n} \int_{1}^{2} f(\frac{\lfloor x\rfloor }{n})  \,dx  \ldots
-                + \frac{1}{n} \int_{n-1}^{n} f(\frac{\lfloor x\rfloor }{n})  \,dx \]
-
-
-            \[\lim_{n \to \infty} \frac{1}{n} \int_{0}^{n} f(\frac{\lfloor x\rfloor }{n})  \,dx  = \lim_{n \to \infty}\frac{1}{n}\sum_{k= 0}^{n}\-\int_{k}^{k+1} f(\frac{\lfloor x\rfloor }{n})  \,dx   \]
+    \[\lim_{n \to \infty} \frac{1}{n} \int_{0}^{n} f(\frac{\lfloor x\rfloor }{n})  \,dx  =
+        \lim_{n \to \infty} \frac{1}{n} \int_{0}^{1} f(\frac{\lfloor x\rfloor }{n})  \,dx + \frac{1}{n} \int_{1}^{2} f(\frac{\lfloor x\rfloor }{n})  \,dx  \ldots
+        + \frac{1}{n} \int_{n-1}^{n} f(\frac{\lfloor x\rfloor }{n})  \,dx \]
 
 
-
+    \[\lim_{n \to \infty} \frac{1}{n} \int_{0}^{n} f(\frac{\lfloor x\rfloor }{n})  \,dx  =
+        \lim_{n \to \infty}\frac{1}{n}\sum_{k= 0}^{n}\-\int_{k}^{k+1} f(\frac{\lfloor x\rfloor }{n})  \,dx   \]
 
 
 
-        }}
+    \[\lim_{n \to \infty}\frac{1}{n}\sum_{k= 0}^{n}\-\int_{k}^{k+1} f(\frac{\lfloor x\rfloor }{n})  \,dx   =  \lim_{n \to \infty}\frac{1}{n}\sum_{k= 0}^{n}\-\int_{k}^{k+1} f(\frac{k}{n})  \,dx  \]
 
+    \[ \lim_{n \to \infty}\frac{1}{n}\sum_{k= 0}^{n} f(\frac{k}{n})  \int_{k}^{k+1}\,dx =  \lim_{n \to \infty}\frac{1}{n}\sum_{k= 0}^{n} f(\frac{k}{n}) \-\-\- x\Big|_k^{k+1} \]
+
+    \[ \lim_{n \to \infty}\sum_{k= 0}^{n} \frac{1}{n}f(\frac{k}{n}) \]
+    Luego al llegar a esta ecuacion, nos podemos dar cuenta que esta es la suma de riemann, de la integral $f(x)$, por lo tanto,
+    \[ \lim_{n \to \infty} \frac{1}{n} \int_{0}^{n} f(\frac{\lfloor x\rfloor }{n})  \,dx  = \int_{0}^{1}f(x)  \,dx \]
+
+
+    }}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % %%%%%%%% Problema 2.9     ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+
+
+    
+
+
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \end{center}
